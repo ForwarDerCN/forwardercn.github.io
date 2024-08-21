@@ -1,5 +1,5 @@
      
-# Personal Infomations
+# Deyan Kong
 
 ### 2021-09 ~ Now
  - Undergraduate student in Computer Science and Technology, University of Chinese Academy of Sciences
