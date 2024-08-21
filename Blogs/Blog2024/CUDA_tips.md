@@ -2,4 +2,4 @@
 
 ## Common CUDA
 
-## <thrust> library
+## With `<thrust>` library
