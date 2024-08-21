@@ -32,3 +32,19 @@ void sortStructArray(KeyStruct* d_array, int size)
 
 We find it extremely slow when the struct array is large. The possible reason is that thrust swap the whole struct when sorting, which brings great **cache miss**.
 
+
+One way to solve this problem is to use a `key-value` pair array. We can sort the `key` array and then rearrange the `value` array. Here is an example:
+
+```cpp
+#include <thrust/sort.h>
+#include <thrust/device_vector.h>
+#include <thrust/execution_policy.h>
+
+struct KeyStruct 
+{
+    int key;
+    float value[64];   // it intends to be a large array
+};
+
+```
+
