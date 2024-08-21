@@ -16,3 +16,5 @@
 For indexed blogs, click [**all blogs**](./blogs/blog_index.md).
 
  - Some tips for CUDA programming. [2024-08-21](./blogs/blog2024/CUDA_tips.md)
+
+ - Linear BVH construction and Traverse. [2024-08-21](./blogs/blog2024/Linear_BVH.md)
