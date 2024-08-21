@@ -10,7 +10,7 @@
 
 ### 3D Gaussian
 
- - 3D Gaussion Ray Casting. [2024-08-21](./blog2024/3D_Gaussian.md)
+ - 3D Gaussion Ray Casting. [2024-08-21](./blog2024/3D_Gaussian_ray_casting.md)
 
 ## Project Summaries
 
