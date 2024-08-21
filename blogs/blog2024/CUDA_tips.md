@@ -1,5 +1,7 @@
 # Tips for CUDA Programming
 
+Here are some tips for CUDA programming. The original thinking of using CUDA is to speed up the program by using the GPU. So we concentrate on the performance of the program.
+
 ## Common CUDA
 
 ### Memory Management
