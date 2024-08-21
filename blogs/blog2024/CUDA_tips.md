@@ -10,7 +10,7 @@ We always meet the scene that the program loops once and once, using the same me
 
 The important thing is that we only allocate memory space once and **use it repeatedly**. DON'T allocate memory space at the beginning of each loop and free it at the end of each loop. It is a huge waste of time.
 
-## With `<thrust/sort>` library
+## With thrust/sort library
 
 While we want to sort a struct array by one key, we can use `thrust::sort` with a custom comparator. Here is an example:
 
