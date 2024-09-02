@@ -4,7 +4,7 @@
 
 ### CUDA Programming
 
- - Some tips for CUDA programming. [2024-08-21](./blog2024/CUDA_tips.md)
+ - Some tips for CUDA programming. [2024-08-21](./blog2024/001-CUDA_tips.md)
 
 ## Frontier Studies
 
@@ -14,4 +14,4 @@
 
 ## Project Summaries
 
- - Linear BVH. [2024-08-21](./blog2024/Linear_BVH.md)
+ - Linear BVH. [2024-08-21](./blog2024/002-Linear_BVH.md)
