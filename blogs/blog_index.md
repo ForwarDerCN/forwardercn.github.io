@@ -10,8 +10,8 @@
 
 ### 3D Gaussian
 
- - 3D Gaussion Ray Casting. [2024-08-21](./blog2024/3D_Gaussian_ray_casting.md)
+ - 3D Gaussion Review. [2024-09-02](./blog2024/003-3DGS_review.md)
 
 ## Project Summaries
 
- - Linear BVH. [2024-08-21](./blog2024/002-Linear_BVH.md)
+ - Linear BVH. [2024-08-22](./blog2024/002-Linear_BVH.md)

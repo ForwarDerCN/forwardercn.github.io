@@ -14,12 +14,12 @@ The final shape of LBVH is shown below:
 
 We use a *Bottom-Up* method to construct the LBVH. The construct process is divided into following steps:
 
-1. **initialize the primitives**. Find the most efficient way to initialize the infomations of leaf nodes, including the verts or vert_indexes.
-2. **calculate the leaf AABB**. Calculate the AABB of each leaf node. Each leaf node stimulates a GPU thread.
-3. **calculate the leaf Morton code**. Calculate the Morton code of each leaf node, using the centroid of the AABB for encoding. Each leaf node stimulates a GPU thread.
-4. **radix sort the leaf nodes using Morton code as key**. We use the thrust library to sort the leaf nodes. Note that we use SORT-then-SWAP method to avoid the cache miss, as shown in [CUDA Tips/With thrust or sort library](./blog2024/001-CUDA_tips).
-5. **generate hierarchy**. Determine the range and split of each internal node in parallel.
-6. **calculate the internal AABB**. Each leaf node stimulates a GPU thread. They go up, rewriting the AABB of their parent node if arrive at the first, or merging with the parent if arrive at the second.
+S1. **initialize the primitives**. Find the most efficient way to initialize the infomations of leaf nodes, including the verts or vert_indexes.
+S2. **calculate the leaf AABB**. Calculate the AABB of each leaf node. Each leaf node stimulates a GPU thread.
+S3. **calculate the leaf Morton code**. Calculate the Morton code of each leaf node, using the centroid of the AABB for encoding. Each leaf node stimulates a GPU thread.
+S4. **radix sort the leaf nodes using Morton code as key**. We use the thrust library to sort the leaf nodes. Note that we use SORT-then-SWAP method to avoid the cache miss, as shown in [CUDA Tips/With thrust or sort library](./001-CUDA_tips).
+S5. **generate hierarchy**. Determine the range and split of each internal node in parallel.
+S6. **calculate the internal AABB**. Each leaf node stimulates a GPU thread. They go up, rewriting the AABB of their parent node if arrive at the first, or merging with the parent if arrive at the second.
 
 The current bottleneck is the radix sort step. However, if the pre-steps of the collision detection are on CPU(host), the bottleneck will be the first step, initializing the primitives.
 
@@ -29,9 +29,9 @@ Given that LBVH is a tree-shaped data structure. We can use the thinking of iter
 
 The traversal process is divided into following steps:
 
-1. **initialize the stack**. We initialize the stack with the stack bottom `-1` and the root node index `0`.
-2. **traverse the tree**. It is a common way for manually recursive simulation. We traverse the tree in a while loop. In each iteration, we travel the current node to check if the queried node's AABB overlaps the current node's left or right child's AABB. If both, we push the right child index into the stack and move to the left child. If only one, we move to the child directly. If none, we pop the stack to get the next node to visit.
-3. **candidates fetch**. When the traversal arrives the leaf node, and the leaf's AABB overlaps the queried AABB, we add the pair into the candidates list. We can also utilize a bitmap to avoid using atomicAdd while accelerating the list's index.
+S1. **initialize the stack**. We initialize the stack with the stack bottom `-1` and the root node index `0`.
+S2. **traverse the tree**. It is a common way for manually recursive simulation. We traverse the tree in a while loop. In each iteration, we travel the current node to check if the queried node's AABB overlaps the current node's left or right child's AABB. If both, we push the right child index into the stack and move to the left child. If only one, we move to the child directly. If none, we pop the stack to get the next node to visit.
+S3. **candidates fetch**. When the traversal arrives the leaf node, and the leaf's AABB overlaps the queried AABB, we add the pair into the candidates list. We can also utilize a bitmap to avoid using atomicAdd while accelerating the list's index.
 
 ## Conclusion
 
