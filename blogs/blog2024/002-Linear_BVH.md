@@ -38,3 +38,6 @@ The traversal process is divided into following steps:
 ## Conclusion
 
 The LBVH is a good choice for collision detection, especially for large scenes. However, considering the nature of the tree structure, the traversal process is not as efficient as we expected.  
+
+
+[Go Back to HomePage](../../index.md)

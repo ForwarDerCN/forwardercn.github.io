@@ -116,3 +116,5 @@ void sortStructArray(KeyStruct* d_array, int size)
 
 This time, when `thrust/sort` is sorting our array, it only need to exchange the `key` array, which is much faster than the previous method.
 
+
+[Go Back to HomePage](../../index.md)

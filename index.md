@@ -17,6 +17,7 @@
 
 For indexed blogs, click [**all blogs**](./blogs/blog_index.md).
 
+ - 3D Gaussian Review. [2024-09-02](./blogs/blog2024/003-3DGS_review.md)
  - Linear BVH construction and Traverse. [2024-08-22](./blogs/blog2024/002-Linear_BVH.md)
  - Some tips for CUDA programming. [2024-08-21](./blogs/blog2024/001-CUDA_tips.md)
 
