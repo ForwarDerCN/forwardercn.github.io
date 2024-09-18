@@ -1,4 +1,3 @@
-[Go Back to HomePage](../../index.md)
 
 # Linear BVH
 

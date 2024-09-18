@@ -1,4 +1,3 @@
-[Go Back to HomePage](../../index.md)
 
 # Tips for CUDA Programming
 
