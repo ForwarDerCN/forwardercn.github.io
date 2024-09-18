@@ -1,4 +1,4 @@
-[Go Back to HomePage](../../index.md)
+[Go Back to HomePage](../index.md)
 
 # All Blogs
 
@@ -19,4 +19,4 @@
  - Linear BVH. [2024-08-22](./blog2024/002-Linear_BVH.md)
 
 
-[Go Back to HomePage](../../index.md)
+[Go Back to HomePage](../index.md)

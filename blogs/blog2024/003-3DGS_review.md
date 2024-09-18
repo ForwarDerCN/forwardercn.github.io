@@ -19,5 +19,9 @@ For gaussain editing:
 4. Novel representations of pos, ori etc.
 5. Compare irradiace with force/mag-field?
 
+## Recent reading list
+
++ 
+
 
 [Go Back to HomePage](../../index.md)
