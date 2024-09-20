@@ -5,6 +5,9 @@
 
  - Undergraduate student in Computer Science and Technology, *University of Chinese Academy of Sciences ([UCAS](http://www.ucas.ac.cn))*
 
+#### 2024-09 ~ Now
+ - Visiting student in Institute of Computing Technology, *Chinese Academy of Sciences ([ICT](http://www.ict.ac.cn))*
+
 #### Interests
 
  - Computer Graphics
