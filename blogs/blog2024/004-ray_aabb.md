@@ -4,6 +4,10 @@
 
 Physically, ray is one point trveling from a start point to a direction. AABB is a box in 3D space. When we want to know if a ray intersects with an AABB, we can check if the ray intersects with the box's 3 dimentions at **any same** time.
 
+## 2-d example
+
+![An 2D example for slabs-method](./img2024/004-f1-ray-aabb.jpg)
+
 ## Implementation
 
 We calculate the time scale passing the X axis, then Y, check thier overlaps. And last, Z axis. 
