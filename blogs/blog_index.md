@@ -22,6 +22,10 @@
 
  - Slabs-method for ray-AABB intersection. [2024-09-23](./blog2024/004-ray_aabb.md)
 
+## Machine Learning
+
+ - Gabor Filter and Feature Extraction. [2024-12-11](./blog2024/006-gabor_filter.md)
+
 ## Project Summaries
 
  - Linear BVH. [2024-08-22](./blog2024/002-Linear_BVH.md)

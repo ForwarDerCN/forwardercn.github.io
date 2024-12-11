@@ -22,6 +22,7 @@
 
 For indexed blogs, click [**all blogs**](./blogs/blog_index.md).
 
+ - Gabor Filter and Feature Extraction. [2024-12-11](./blogs/blog2024/006-gabor_filter.md)
  - Differentiable Rendering. [2024-10-09](./blogs/blog2024/005-differentiable_rendering.md)
  - Slabs-method for ray-AABB intersection. [2024-09-23](./blogs/blog2024/004-ray_aabb.md)
  - 3D Gaussian Review. [2024-09-02](./blogs/blog2024/003-3DGS_review.md)
