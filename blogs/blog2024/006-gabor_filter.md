@@ -23,27 +23,27 @@ A **Gabor filter** is a linear filter commonly used in image processing, especia
 
 A Gabor filter is defined as the product of a sinusoidal wave and a Gaussian envelope:
 
-\[
+\\[
 g(x, y) = \exp\left(-\frac{x'^2 + \gamma^2 y'^2}{2\sigma^2}\right) \cdot \cos\left(2\pi f x' + \phi\right)
-\]
+\\]
 
 - **Sinusoidal Component**: Provides frequency selectivity, characterized by frequency \( f \) and phase offset \( \phi \).
 - **Gaussian Envelope**: Provides spatial weighting, characterized by standard deviation \( \sigma \) and aspect ratio \( \gamma \).
 
-Here, \((x', y')\) are rotated coordinates:
-\[
+Here, \\((x', y')\\) are rotated coordinates:
+\\[
 x' = x \cos\theta + y \sin\theta, \quad y' = -x \sin\theta + y \cos\theta
-\]
-where \( \theta \) is the orientation of the filter.
+\\]
+where \\( \theta \\) is the orientation of the filter.
 
 ---
 
 ## **Parameters of a Gabor Filter**
-1. **Central Frequency \( f \)**: Controls the frequency component of the filter response.
-2. **Orientation \( \theta \)**: Specifies the directional selectivity of the filter.
-3. **Scale \( \sigma \)**: Determines the spatial extent of the Gaussian envelope.
-4. **Aspect Ratio \( \gamma \)**: Controls the elliptical shape of the filter.
-5. **Phase Offset \( \phi \)**: Adjusts the phase of the sinusoidal component.
+1. **Central Frequency \\( f \\)**: Controls the frequency component of the filter response.
+2. **Orientation \\( \theta \\)**: Specifies the directional selectivity of the filter.
+3. **Scale \\( \sigma \\)**: Determines the spatial extent of the Gaussian envelope.
+4. **Aspect Ratio \\( \gamma \\)**: Controls the elliptical shape of the filter.
+5. **Phase Offset \\( \phi \\)**: Adjusts the phase of the sinusoidal component.
 
 ---
 
